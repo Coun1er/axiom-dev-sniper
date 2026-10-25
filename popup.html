@@ -1,0 +1,10 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Axiom dev sniper</title><link rel="stylesheet" href="popup.css"></head><body>
+<header><strong>Axiom dev sniper</strong><small>1.0.3</small></header>
+<label for="developers">Адреса девов Solana — по одному в строке</label><textarea id="developers" rows="5" spellcheck="false" placeholder="Полные адреса, регистр сохраняется"></textarea>
+<label class="toggle">Автооткрытие<input id="openEnabled" type="checkbox" role="switch"></label>
+<label class="toggle">Автопокупка (приоритет над открытием)<input id="buyEnabled" type="checkbox" role="switch"></label>
+<label class="toggle">Тестовый режим — только журнал<input id="dryRun" type="checkbox" role="switch" checked></label>
+<p>Для действий Pulse должен быть активной вкладкой, окно Chrome — в фокусе. После включения может сработать уже видимый токен. Каждый mint — не более одного действия, в том числе после перезапуска Chrome. Совпадения в тестовом режиме не тратят эту попытку.</p>
+<button id="save">Сохранить режимы и список</button><button id="check">Проверить данные Pulse — без действий</button>
+<div id="status" role="status"></div><h2>Последняя проверка</h2><div id="summary">Пока нет данных</div><h2>Журнал</h2><div id="log">Пусто</div>
+<script src="settings.js"></script><script src="popup.js"></script></body></html>
